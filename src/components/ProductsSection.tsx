@@ -2,7 +2,7 @@
 import React from 'react';
 import { 
   Droplets, Filter, Recycle, Factory, Beaker, 
-  Waves, Flask, Truck, ArrowRight
+  Waves, FlaskConical, Truck, ArrowRight
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import AnimatedWaterDrop from './AnimatedWaterDrop';
@@ -91,7 +91,7 @@ const products = [
   {
     title: "Packaged Drinking Water",
     description: "Complete bottling solutions with RO, UV sterilization, and ozonation for pure drinking water.",
-    icon: <Flask className="h-6 w-6" />,
+    icon: <FlaskConical className="h-6 w-6" />,
     capacity: "500 LPH to 100,000 LPH",
     highlighted: true
   },

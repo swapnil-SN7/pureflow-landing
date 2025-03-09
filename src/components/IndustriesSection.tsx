@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Building, UtensilisCrossed, Stethoscope, Shirt, Flask, Hotel, Building2 } from 'lucide-react';
+import { Building, Utensils, Stethoscope, Shirt, FlaskConical, Hotel, Building2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface IndustryCardProps {
@@ -8,14 +8,18 @@ interface IndustryCardProps {
   icon: React.ReactNode;
   description: string;
   className?: string;
+  style?: React.CSSProperties;
 }
 
-const IndustryCard: React.FC<IndustryCardProps> = ({ title, icon, description, className }) => {
+const IndustryCard: React.FC<IndustryCardProps> = ({ title, icon, description, className, style }) => {
   return (
-    <div className={cn(
-      "glass-card p-6 h-full transition-all duration-300 hover:shadow-md group",
-      className
-    )}>
+    <div 
+      className={cn(
+        "glass-card p-6 h-full transition-all duration-300 hover:shadow-md group",
+        className
+      )}
+      style={style}
+    >
       <div className="rounded-full h-14 w-14 bg-icon-blue-100/80 text-icon-blue-600 flex items-center justify-center mb-4 group-hover:bg-icon-blue-500 group-hover:text-white transition-colors duration-300">
         {icon}
       </div>
@@ -33,7 +37,7 @@ const industries = [
   },
   {
     title: "Food & Beverage",
-    icon: <UtensilisCrossed className="h-6 w-6" />,
+    icon: <Utensils className="h-6 w-6" />,
     description: "Ultra-pure water solutions for food processing, breweries, and beverage production."
   },
   {
@@ -48,7 +52,7 @@ const industries = [
   },
   {
     title: "Chemical Industry",
-    icon: <Flask className="h-6 w-6" />,
+    icon: <FlaskConical className="h-6 w-6" />,
     description: "Industrial-grade water solutions for chemical processes and manufacturing needs."
   },
   {
