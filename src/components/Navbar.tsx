@@ -46,7 +46,9 @@ const Navbar = () => {
             <a href="#about" className="text-icon-gray-800 hover:text-icon-blue-600 transition-colors">About</a>
             <a href="#contact" className="text-icon-gray-800 hover:text-icon-blue-600 transition-colors">Contact</a>
             <a 
-              href="#contact" 
+              href="https://drive.google.com/file/d/1qC-RzsZLMe0fgVOphpag18TY9yXItykO/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="glass-button flex items-center space-x-2 transform hover:scale-[1.02] active:scale-[0.98]"
             >
               <span>Get a Quote</span>
@@ -103,7 +105,9 @@ const Navbar = () => {
               Contact
             </a>
             <a 
-              href="#contact" 
+              href="https://drive.google.com/file/d/1qC-RzsZLMe0fgVOphpag18TY9yXItykO/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block py-3 px-4 mt-2 bg-icon-blue-500 text-white rounded-md"
               onClick={() => setIsOpen(false)}
             >
