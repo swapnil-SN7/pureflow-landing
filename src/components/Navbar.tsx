@@ -46,7 +46,7 @@ const Navbar = () => {
             <a href="#about" className="text-icon-gray-800 hover:text-icon-blue-600 transition-colors">About</a>
             <a href="#contact" className="text-icon-gray-800 hover:text-icon-blue-600 transition-colors">Contact</a>
             <a 
-              href="https://swap-bkt-289.s3.ap-south-1.amazonaws.com/Icon+Water+Engg2.pdf"
+              href="https://swap297.s3.eu-north-1.amazonaws.com/Icon+Water+Engg2.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="glass-button flex items-center space-x-2 transform hover:scale-[1.02] active:scale-[0.98]"
